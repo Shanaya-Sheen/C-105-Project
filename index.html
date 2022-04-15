@@ -1,0 +1,56 @@
+ 
+<html>
+  <head>
+    <title>C-105 Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h3 class="btn btn-default heading">Recognise</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">This is integrated with Teachable Machine so that it is embedded into the website to recognise things accurately </p>
+      <b class="name-of-object">
+        Me-
+        <hr>
+    My friend (Because the rest of my family members are busy 😅) -
+    <br>
+    <hr>
+      </b>
+<hr>
+      <label>Webcam View- </label>
+<div id="camera"></div>
+      <br><br>
+<div id="result"></div>
+      <br><br>
+<button class="btn btn-info" onclick="take_snapshot()">Click to find!</button>
+      <br><br>
+<button class="btn btn-success" onclick="check()">Recognise Now</button>
+      <br><br>
+      <p style="font-size: 22px;">Person: <span id="result-object-name"></span> </p>
+      <p style="font-size: 22px;">Accuracy: <span id="result-object-accuracy"></span> </p>
+      <hr>
+      <hr>
+      <h4>Sorry :(</h4>
+<img src="https://media1.tenor.com/images/fdc702b58243414ec6f6bb193db76f04/tenor.gif?itemid=10399341">
+</center>
+  </div>
+<script src="main.js"></script>
+
+
+  </body>
+</html>
+
+ 
